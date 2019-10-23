@@ -11,13 +11,13 @@ void setup(){
  
 //laço principal (executado infinitamente)
 void loop() {
-  
+  delay(100);
   val = analogRead(analogPin);   // lê o pino de entrada
   tensao = ((5.0 * val)/1023);
   Serial.println(tensao); // imprime o valor na porta serial
-  if(tensao >= "2.5"){
-    pinMode(ledPin,HIGH);    
+  if(tensao >= 2.5){
+    digitalWrite(ledPin,HIGH);    
   }else{
-    pinMode(ledPin,LOW);
+    digitalWrite(ledPin,LOW);
   }
 }
