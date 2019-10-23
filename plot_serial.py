@@ -23,6 +23,9 @@ def animate(i, xs, ys):
      volt= ser.readline()
 
      #incremento do novo valor
+
+     #v=volt
+     #v=int(v)
      xs.append(tempo)
      ys.append(volt)
 
@@ -40,5 +43,5 @@ def animate(i, xs, ys):
      plt.xlabel('Tempo')
 
 # altere o valor do interval para que que o frame seja atualizado de maneira mais rapida ou nao
-ani = animation.FuncAnimation(fig, animate, fargs=(xs, ys), interval=100)
+ani = animation.FuncAnimation(fig, animate, fargs=(xs, ys), interval=1)
 plt.show()
