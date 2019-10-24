@@ -21,20 +21,18 @@ def animate(i, xs, ys):
 
      #recebe o valor da serial
      volt= ser.readline()
-
+     volt=volt[:4]
      #incremento do novo valor
-
-     #v=volt
-     #v=int(v)
      xs.append(tempo)
-     ys.append(volt)
+     ys.append(float(volt))
 
-     #mantem grafico dentro do intervalo de 100 plots
-     if tempo > 100:
-         xs = xs[tempo-99:tempo]
-         ys = ys[tempo-99:tempo]
+     #mantem grafico dentro do intervalo de 60 plots
+     if tempo > 60:
+         xs = xs[tempo-59:tempo]
+         ys = ys[tempo-59:tempo]
 
      ax.clear()
+
      # desenhar x e y
      ax.plot(xs, ys)
 
