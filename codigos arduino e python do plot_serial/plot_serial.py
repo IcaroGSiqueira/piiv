@@ -10,9 +10,8 @@ ser=serial.Serial('/dev/ttyACM0',9600)
 fig, ax = plt.subplots()
 
 #valores iniciais
-xs = [0.0]
-ys = [0.0]
-
+xs = [0]
+ys = [0]
 tempo=0
 
 #funcao para animar
