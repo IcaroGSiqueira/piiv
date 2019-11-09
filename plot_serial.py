@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt #sudo apt install python3-matplotlib
 import matplotlib.animation as animation #sudo apt install python3-tk
-import numpy as np
-import serial
+import numpy as np #sudo apt install python3-numpy
+import serial #sudo python -m pip install pyserial
+#sudo apt install python3-pip
 
 ser=serial.Serial('/dev/ttyACM0',9600)
 
@@ -12,7 +13,6 @@ fig, ax = plt.subplots()
 #valores iniciais
 xs = [0.0]
 ys = [0.0]
-
 tempo=0
 
 #funcao para animar
