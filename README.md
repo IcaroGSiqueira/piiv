@@ -7,4 +7,4 @@ $ cat id_rsa.pub
 $ git config --global pack.threads
 
 $ git filter-branch --tree-filter 'rm -rf path/file' HEAD
-
+$ grep -ril "<<<<<<< HEAD" ./*
