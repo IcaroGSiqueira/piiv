@@ -10,6 +10,9 @@ $ git filter-branch --tree-filter 'rm -rf path/file' HEAD
 $ grep -ril "<<<<<<< HEAD" ./*
 
 .ssh/confg > 
+
 Host github.com
+
   Hostname ssh.github.com
+  
   Port 443
