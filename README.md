@@ -1,4 +1,4 @@
-# PI_4SEM
+# PI4
 
 ## Gerar chave SSH
 $ cd .ssh
